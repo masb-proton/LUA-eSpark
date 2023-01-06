@@ -53,16 +53,21 @@
 
 Extract to Your Location lets choose Desktop/wxWidgets-3.0.5
 
-Will use Code-Blocks C++ editor install from  > sudo apt install codeblocks
+Will use Code-Blocks C++ editor install from  
+> sudo apt install codeblocks
 
-Next command you need to install > sudo apt-get install build-essential
+Next command you need to install 
+> sudo apt-get install build-essential
 
-and > sudo apt install  libgtk-3-dev
+and 
+> sudo apt install  libgtk-3-dev
 
 Go to Directory and run these commands Desktop/wxWidgets-3.0.5
 
 > ./configure
+
 >  make
+
 >  sudo make install
 
 
@@ -74,7 +79,9 @@ Copy the HelloWorld Code in to this file found at the end of the page "https://d
 
 
 Run this command(cmd) to get the following result 
+
 > wx-config --cxxflags
+
 > -I/usr/local/lib/wx/include/gtk3-unicode-3.0 -I/usr/local/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__ -pthread
 
 In CodeBlock Editor Goto Menu Project>Build Options > Other Compiler Options
@@ -82,7 +89,8 @@ And Paste the result from cmd
 
 
 > wx-config --libs
-> -L/usr/local/lib -pthread   -lwx_gtk3u_xrc-3.0 -lwx_gtk3u_html-3.0 -lwx_gtk3u_qa-3.0 -lwx_gtk3u_adv-3.0 -lwx_gtk3u_core-3.0 -lwx_baseu_xml-3.0 -``` lwx_baseu_net-3.0 -lwx_baseu-3.0 
+
+> -L/usr/local/lib -pthread   -lwx_gtk3u_xrc-3.0 -lwx_gtk3u_html-3.0 -lwx_gtk3u_qa-3.0 -lwx_gtk3u_adv-3.0 -lwx_gtk3u_core-3.0 -lwx_baseu_xml-3.0 -lwx_baseu_net-3.0 -lwx_baseu-3.0 
 
 Do Copy "wx_baseu-3.0 " and "wx_gtk3u_core-3.0"
 In CodeBlock Editor Goto Menu Project>Build Options > Linker Settings > Press Add Button and Add Both of them
