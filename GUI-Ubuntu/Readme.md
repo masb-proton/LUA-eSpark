@@ -53,11 +53,16 @@
 
 Extract to Your Location lets choose Desktop/wxWidgets-3.0.5
 
-Will use Code-Blocks C++ editor install from ### sudo apt install codeblocks
+Will use Code-Blocks C++ editor install from 
+
+``` sudo apt install codeblocks
 
 Next command you need to install
+
 ``` sudo apt-get install build-essential
+
 and
+
 ``` sudo apt install  libgtk-3-dev
 
 Go to Directory and run these commands Desktop/wxWidgets-3.0.5
