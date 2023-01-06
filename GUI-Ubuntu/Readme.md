@@ -44,7 +44,7 @@
   </p>
 </div>
 
-## How we can use GUI interfaces in Ubuntu
+## How we can use GUI interfaces in Ubuntu using LUA language
 
 ##### followup of https://www.youtube.com/watch?v=Z0TDnnlyscM
 
