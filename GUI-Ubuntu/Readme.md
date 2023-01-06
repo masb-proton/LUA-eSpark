@@ -44,26 +44,20 @@
   </p>
 </div>
 
-# How we can use GUI interfaces in Ubuntu
+### How we can use GUI interfaces in Ubuntu
 
-## followup of https://www.youtube.com/watch?v=Z0TDnnlyscM
+### followup of https://www.youtube.com/watch?v=Z0TDnnlyscM
 
 
-## Download package https://github.com/wxWidgets/wxWidgets/releases/download/v3.0.5/wxWidgets-3.0.5.tar.bz2
+### Download package https://github.com/wxWidgets/wxWidgets/releases/download/v3.0.5/wxWidgets-3.0.5.tar.bz2
 
 Extract to Your Location lets choose Desktop/wxWidgets-3.0.5
 
-Will use Code-Blocks C++ editor install from 
+Will use Code-Blocks C++ editor install from  ``` sudo apt install codeblocks
 
-``` sudo apt install codeblocks
+Next command you need to install ``` sudo apt-get install build-essential
 
-Next command you need to install
-
-``` sudo apt-get install build-essential
-
-and
-
-``` sudo apt install  libgtk-3-dev
+and ``` sudo apt install  libgtk-3-dev
 
 Go to Directory and run these commands Desktop/wxWidgets-3.0.5
 
