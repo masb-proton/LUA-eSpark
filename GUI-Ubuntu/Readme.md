@@ -44,45 +44,45 @@
   </p>
 </div>
 
-#How we can use GUI interfaces in Ubuntu
+# How we can use GUI interfaces in Ubuntu
 
-### followup of https://www.youtube.com/watch?v=Z0TDnnlyscM
+## followup of https://www.youtube.com/watch?v=Z0TDnnlyscM
 
 
-### download package https://github.com/wxWidgets/wxWidgets/releases/download/v3.0.5/wxWidgets-3.0.5.tar.bz2
+## Download package https://github.com/wxWidgets/wxWidgets/releases/download/v3.0.5/wxWidgets-3.0.5.tar.bz2
 
 Extract to Your Location lets choose Desktop/wxWidgets-3.0.5
 
 Will use Code-Blocks C++ editor install from ### sudo apt install codeblocks
 
 Next command you need to install
-### sudo apt-get install build-essential
+``` sudo apt-get install build-essential
 and
-### sudo apt install  libgtk-3-dev
+``` sudo apt install  libgtk-3-dev
 
 Go to Directory and run these commands Desktop/wxWidgets-3.0.5
 
-### ./configure
-### make
-### sudo make install
+``` ./configure
+``` make
+``` sudo make install
 
 Now open the CodeBlock Editor and Create a new project By selecting "EmptyProject"
 Now Add a File From File Menu by selecting "c++ source" icon And Name it Main.cpp
 Copy the HelloWorld Code in to this file found at the end of the page "https://docs.wxwidgets.org/latest/overview_helloworld.html"
 
-#Now We have Installed all the requirements it's time to link our libraries
+# Now We have Installed all the requirements it's time to link our libraries
 
 
 Run this command(cmd) to get the following result 
-###wx-config --cxxflags
+``` wx-config --cxxflags
 -I/usr/local/lib/wx/include/gtk3-unicode-3.0 -I/usr/local/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__ -pthread
 
 In CodeBlock Editor Goto Menu Project>Build Options > Other Compiler Options
 And Paste the result from cmd
 
 
-###wx-config --libs
--L/usr/local/lib -pthread   -lwx_gtk3u_xrc-3.0 -lwx_gtk3u_html-3.0 -lwx_gtk3u_qa-3.0 -lwx_gtk3u_adv-3.0 -lwx_gtk3u_core-3.0 -lwx_baseu_xml-3.0 -lwx_baseu_net-3.0 -lwx_baseu-3.0 
+``` wx-config --libs
+``` -L/usr/local/lib -pthread   -lwx_gtk3u_xrc-3.0 -lwx_gtk3u_html-3.0 -lwx_gtk3u_qa-3.0 -lwx_gtk3u_adv-3.0 -lwx_gtk3u_core-3.0 -lwx_baseu_xml-3.0 -``` lwx_baseu_net-3.0 -lwx_baseu-3.0 
 
 Do Copy "wx_baseu-3.0 " and "wx_gtk3u_core-3.0"
 In CodeBlock Editor Goto Menu Project>Build Options > Linker Settings > Press Add Button and Add Both of them
