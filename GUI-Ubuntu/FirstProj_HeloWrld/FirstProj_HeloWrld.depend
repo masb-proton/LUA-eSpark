@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1673020967 source:/home/masb/Desktop/Affan Work/CodeBlocks1/FirstProj_HeloWrld/Main.cpp
+	<iostream>
+	<stdexcept>
+	<stdio.h>
+	<string>
+	<wx/wxprec.h>
+	<wx/wx.h>
+
+1673020922 source:/home/masb/Desktop/Affan Work/CodeBlocks1/FirstProj_HeloWrld/Main2.cpp
+
